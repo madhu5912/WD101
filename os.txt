@@ -86,6 +86,7 @@ void banker()
         printf("\n System is in safe state. \n Safe sequence is ==> \n");
         for(i=0;i<np;i++)
         printf("P%d",safe_seq[i]);
+    }
 }
 
 int main()
@@ -109,7 +110,7 @@ int main()
 
 //Display entered input
 {
-    printf("\n ***Entered Data*** \n\n\n");
+    printf("\n ****Entered Data**** \n\n\n");
     printf("\n Initial allocation matrix: \n");
     display_matrix(allocation);
     printf("\n Maximum Requirement: \n");
@@ -127,10 +128,11 @@ int main()
 }
 
 //Execute process using bankers algo
-banker();
-printf("\n\n\n\n");
-return 0;
-}
+    banker();
+    printf("\n\n\n\n");
+    return 0;
+};
+
 
 
 
